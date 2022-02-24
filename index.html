@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<style>
+			
+			.header {
+				position: fixed;
+				width: 100%;
+				top: 0;
+				left: 0;
+				z-index: 50;
+			}
+			.header_body {
+				position: relative;
+				z-index: 2;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				background-color: rgb(243, 247, 250);
+			}
+			.header_logo {
+				flex: 0 0 80px;
+			}
+			.header_logo img {
+				max-width: 100%;
+				display: block;
+			}
+			.header_burger {
+				display: none;
+			}
+			.content {
+				margin-top: 50px;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				background-color: white;
+			}
+			.content_2 {
+				margin-top: 50px;
+				width: 50vw;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				background-color: white;
+			}
+			.image {
+				text-align: center;
+				width: 50vw;
+			}
+			.text_head {
+				color: rgb(78, 78, 78);
+				font-size: 90px;
+				font-weight: bold;
+				text-align: justify;
+			}
+			.text_content {
+				margin-top: 20px;
+				font-size: 25px;
+				color: rgb(117, 115, 115);
+			}
+			.text_button {
+				font-size: 25px;
+				font-weight: bold;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				width: 200px;
+				padding: 10px 10px;
+				background-color: rgb(89, 29, 185);
+				border-radius: 3px;
+				color: rgb(236, 230, 238);
+				text-align: center;
+			}
+			.text_login {
+				margin-top: 10px;
+				color: rgb(117, 115, 115);
+				font-size: 20px;
+			}
+			.header_list {
+				display: flex;
+			}
+			.header_list li {
+				list-style: none;
+				margin: 0px 0px 0px 20px;
+			}
+			.header_link {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 20px;
+				text-decoration: none;
+			}
+			.style_button {
+				border: solid rgb(110, 108, 108);
+				border-radius: 3px;
+			}
+
+			.line {
+				border-bottom: 1px solid rgb(177, 175, 175);
+			}
+
+			
+			.content_3 {
+				height: 40vh;
+				background-color: rgb(248, 245, 245);
+			}
+			.text_content2 {
+				flex-direction: column;
+				align-content: center;
+				align-items: center;
+				color: rgb(117, 115, 115);
+				text-align: center;
+			}
+			.top {
+				padding-top: 10px;
+				color: black;
+				font-size: 35px;
+			}
+			.center {
+				padding: 10px 10px;
+				color: rgb(117, 115, 115);
+				font-size: 25px;
+			}
+			.button_content {
+				margin-top: 20px;
+				font-size: 20px;
+				font-weight: bold;
+				width: 200px;
+				padding: 10px 10px;
+				border: 2px solid rgb(188, 108, 207);
+				border-radius: 3px;
+				color: rgb(163, 59, 189);
+				display: inline-block;
+			}
+			.end {
+				margin-top: 30px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				align-items: center;
+				align-content: center;
+			}
+			.end_logo {
+				padding: 10px 10px;
+			}
+
+			@media (max-width:768px){
+				.header_burger {
+					display: block;	
+					position: relative;
+					width: 30px;
+					height: 20px;
+					margin-left: 400px;
+				}
+				.header_burger span {
+					position: absolute;
+					background-color: rgb(177, 175, 175);
+					left: 0;
+					width: 100%;
+					height: 2px;
+					top: 9px;
+				}
+				.header_burger:before,
+				.header_burger::after{
+					content: '';
+					background-color: rgb(177, 175, 175);
+					position: absolute;
+					width: 100%;
+					height: 2px;
+					left: 0;
+				}
+				.header_burger:before {
+					top: 0;
+				}
+				.header_burger:after {
+					bottom: 0;
+				}
+				.header_menu {
+					display: none;
+				}
+				.content {
+					display: flex;
+					flex-direction: column-reverse;
+					text-align: center;
+				}
+				.content_2 {
+					text-align: center;
+				}
+			
+				.button_content {
+					width: 702px;
+					margin-bottom: 30px;
+				}
+				.content_3 {
+					height: auto;
+				}
+				.end {
+					display: flex;
+					flex-direction: column;
+					margin-top: 0;
+				}
+			}
+			@media (max-width:576px){
+				.content_3 {
+					width: fit-content;
+				}
+			}
+			
+			
+
+			
+		</style>
+	</head>
+	<body>
+		<div class="bord">
+			<header class="header">
+				<div class="container">
+					<div class="header_body">
+						<a href="#" class="header_logo">
+				<img src="Slack-Logo.png" />
+				</a>
+			
+			<nav class="header_menu">
+				<ul class="header_list">
+				<li> <a href="" class="header_link"></a>Why Slack?</li>
+				<li><a href="" class="header_link"></a>Pricing</li>
+				<li><a href="" class="header_link"></a>About Us</li>
+				<li class="style_button"><a href="" class="header_link"></a>Your Workspaces</li>
+				</ul>
+			</nav>
+			<div class="header_burger">
+				<span></span>
+			</div>
+			</div>
+			</div>
+			<div class="line"></div>
+		</div>
+		
+		<div class="content">
+			<div class="image">
+				<img src="people.jpg" alt="People" height="600px" width="600px" />
+			</div>
+			<div class="content_2">
+				<div class="text_head">Where Work <br />Happens</div>
+				<div class="text_content">
+					When your team needs to kick off a project, hire a new <br />
+					employee, deploy some code, review a sales contract, finalize
+					<br />next year's budget, measure an A/B test, plan your next
+					office<br />
+					opening, and more, Slack has you covered.
+				</div>
+				<div class="text_button">Get Started</div>
+				<div class="text_login">
+					Already using Slack? <a href="">Sign in.</a>
+				</div>
+			</div>
+		</div>
+		<div class="content_3">
+			<div class="text_content2">
+				<div class="top">You're in good company</div>
+				<div class="center">
+					Whatever work means for you, Slack brings all the pieces and people
+					you need can actually get things done.
+				</div>
+				<div class="button_content">Discover why</div>
+			</div>
+			<div class="end">
+				<div class="end_logo">
+					<img src="airb.png" width="200px" />
+				</div>
+				<div class="end_logo"><img src="Capital-One.png" width="200px" /></div>
+				<div class="end_logo"><img src="harvard.png" width="200px" /></div>
+			</div>
+			<div class="end">
+				<div class="end_logo">
+					<img src="los-angeles-times.png" width="200px" />
+				</div>
+				<div class="end_logo"><img src="oracle.png" width="200px" /></div>
+				<div class="end_logo"><img src="ticketmaster.png" width="200px" /></div>
+			</div>
+		</div>
+	</body>
+</html>
